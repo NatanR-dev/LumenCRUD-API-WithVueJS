@@ -1,5 +1,5 @@
 ## Lumen CRUD API (Login System)
-Lumen Project <a href="http://lumenvel-com.umbler.net/" target="_blank">API</a> | desafio feito pela </b><a href="https://gdigital.com.br/" target="_blank"><img src="https://gdigital.com.br/files/sites/6/2019/08/logo-g-.webp" alt="G Digital Logo" alt="G Digital" width="60" target="_blank"></a>
+Lumen Project <a href="http://lumenvel-com.umbler.net/login/" target="_blank">API</a> | desafio feito pela </b><a href="https://gdigital.com.br/" target="_blank"><img src="https://gdigital.com.br/files/sites/6/2019/08/logo-g-.webp" alt="G Digital Logo" alt="G Digital" width="60" target="_blank"></a>
 
 ## Instruções
 
@@ -8,6 +8,16 @@ Lumen Project <a href="http://lumenvel-com.umbler.net/" target="_blank">API</a> 
 3) php artisan key:generate
 4) php artisan migrate --seed
 5) php -S localhost:8000 -t public
+
+
+## Desafio:
+<br/>Lumen API:✓<br/>
+<br/>Biblioteca Axios:✓<br/>
+<br/>O mínimo possível de jQuery:✓<br/>
+<br/>Core & API Lumen Routes:✓<br/> 
+<br/>Migrations:✓<br/>
+<br/>Landing Page with bootstrap 4 layout:✓<br/>
+<br/>Form Login & Sign Up:✓<br/>
 
 
 ## Demonstração abaixo:
@@ -27,14 +37,6 @@ Lumen Project <a href="http://lumenvel-com.umbler.net/" target="_blank">API</a> 
  <img src="https://i.ibb.co/DpSN7nd/Screenshot-23.png">  
 </h1>
 
-<br/><b>Desafio:</b><br/>
-<br/>Lumen API:✓<br/>
-<br/>Biblioteca Axios:✓<br/>
-<br/><b>o mínimo possível de jQuery:✓</b><br/>
-<br/>Core & API Lumen Routes:✓<br/> 
-<br/>Migrations:✓<br/>
-<br/>Landing Page with bootstrap 4 layout:✓<br/>
-<br/>Form Login & Sign Up:✓<br/>
 
 
 
