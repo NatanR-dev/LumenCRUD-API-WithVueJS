@@ -1,45 +1,46 @@
-## Lumen CRUD API (Login System)
-Lumen Project <a href="http://lumenvel-com.umbler.net/login/" target="_blank">API</a> | desafio feito pela </b><a href="https://gdigital.com.br/" target="_blank"><img src="https://gdigital.com.br/files/sites/6/2019/08/logo-g-.webp" alt="G Digital Logo" alt="G Digital" width="60" target="_blank"></a>
+# Lumen CRUD API
 
-## Instruções
+A clean, modular, and RESTful API built with Lumen, focused on scalable and maintainable backend architecture.
 
-1) git clone git@github.com:NatanR-dev/LumenCRUD-API.git 
-2) composer Install
-3) php artisan key:generate
-4) php artisan migrate --seed
-5) php -S localhost:8000 -t public
+## Features
 
+- RESTful endpoints for Notes resource (CRUD)
+- Modular route organization
+- Clean code, ready for integration with any front-end (Vue, React, Angular, etc.)
+- Example HTTP requests included in `Request.http`
+- Ready for deployment and further extension
 
-## Desafio:
-<br/>Lumen API:✓<br/>
-<br/>Biblioteca Axios:✓<br/>
-<br/>O mínimo possível de jQuery:✓<br/>
-<br/>Core & API Lumen Routes:✓<br/> 
-<br/>Migrations:✓<br/>
-<br/>Landing Page with bootstrap 4 layout:✓<br/>
-<br/>Form Login & Sign Up:✓<br/>
+## Getting Started
 
+1. Clone the repository:
+   ```sh
+   git clone git@github.com:NatanR-dev/LumenCRUD-API.git
+   ```
+2. Install dependencies:
+   ```sh
+   composer install
+   ```
+3. Configure your environment variables (`.env`)
+4. Run migrations and seeders:
+   ```sh
+   php artisan migrate --seed
+   ```
+5. Start the server:
+   ```sh
+   php -S localhost:8000 -t public
+   ```
 
-## Demonstração abaixo:
-<h1 align="center">
-<img src="https://i.ibb.co/ccj7scz/Screenshot-27.png">
-</h1>
-<strong>Cadastro</strong>
-<h1 align="center"> 
- <img src="https://i.ibb.co/wKR9tYJ/Screenshot-25.png">  
-</h1>
-<strong>Recuperação de Senha</strong>
-<h1 align="center"> 
- <img src="https://i.ibb.co/M9VPGz3/Screenshot-24.png">  
-</h1>
-<strong>Alteração de Senha</strong>
-<h1 align="center"> 
- <img src="https://i.ibb.co/DpSN7nd/Screenshot-23.png">  
-</h1>
+## API Endpoints
 
+- `GET    /notes`           — List all notes
+- `GET    /notes/{id}`      — Get a specific note
+- `POST   /notes`           — Create a new note
+- `PUT    /notes/{id}`      — Update a note
+- `PATCH  /notes/{id}`      — Partially update a note
+- `DELETE /notes/{id}`      — Delete a note
 
+See `Request.http` for ready-to-use request examples.
 
-
-## :memo: Licença
+## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
