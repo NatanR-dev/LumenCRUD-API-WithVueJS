@@ -1,0 +1,32 @@
+### Criar uma nota
+POST http://localhost:8000/notes
+Content-Type: application/json
+
+{
+  "note": "{\"title\":\"Minha Nota 2\",\"content\":\"Conteúdo da nota\"}"
+}
+
+### Listar todas as notas
+GET http://localhost:8000/notes
+
+### Ler uma nota específica (substitua 1 pelo ID desejado)
+GET http://localhost:8000/notes/1
+
+### Atualizar uma nota (substitua 1 pelo ID desejado)
+PUT http://localhost:8000/notes/1
+Content-Type: application/json
+
+{
+  "note": "{\"title\":\"Nota Atualizada\",\"content\":\"Novo conteúdo\"}"
+}
+
+### Atualização parcial de uma nota (substitua 1 pelo ID desejado)
+PATCH http://localhost:8000/notes/1
+Content-Type: application/json
+
+{
+  "note": "{\"content\":\"Conteúdo alterado apenas\"}"
+}
+
+### Deletar uma nota (substitua 1 pelo ID desejado)
+DELETE http://localhost:8000/notes/2 
