@@ -1,14 +1,14 @@
-# Dockerfile para Lumen (PHP 7.2)
-FROM php:7.2-cli
+# Dockerfile para Lumen (PHP 8.2)
+FROM php:8.2-cli
 
 # Instala extensões necessárias
 RUN apt-get update \
     && apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev zip git unzip \
-    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install gd pdo pdo_mysql
 
 # Instala o Composer
-COPY --from=composer:1.10 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2.5 /usr/bin/composer /usr/bin/composer
 
 # Define diretório de trabalho
 WORKDIR /var/www
