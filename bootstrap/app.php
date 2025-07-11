@@ -3,11 +3,8 @@
 require_once __DIR__.'/../vendor/autoload.php';
 require_once __DIR__.'/../vendor/laravel/lumen-framework/src/helpers.php';
 
-try {
-    (new Dotenv\Dotenv(__DIR__.'/../'))->load();
-} catch (Dotenv\Exception\InvalidPathException $e) {
-    //
-}
+// Carregar variáveis de ambiente (.env) - compatível com Dotenv 5.x+
+Dotenv\Dotenv::createImmutable(__DIR__.'/../')->safeLoad();
 
 /*
 |--------------------------------------------------------------------------

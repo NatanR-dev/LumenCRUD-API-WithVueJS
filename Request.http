@@ -3,7 +3,7 @@ POST http://localhost:8000/notes
 Content-Type: application/json
 
 {
-  "note": "{\"title\":\"Minha Nota 2\",\"content\":\"Conteúdo da nota\"}"
+  "note": "{\"title\":\"Minha Nota Teste\",\"content\":\"Conteúdo da nota\"}"
 }
 
 ### Listar todas as notas
@@ -17,7 +17,7 @@ PUT http://localhost:8000/notes/1
 Content-Type: application/json
 
 {
-  "note": "{\"title\":\"Nota Atualizada\",\"content\":\"Novo conteúdo\"}"
+  "note": "{\"title\":\"Nota Atualizada 1\",\"content\":\"Novo conteúdo\"}"
 }
 
 ### Atualização parcial de uma nota (substitua 1 pelo ID desejado)
@@ -25,8 +25,8 @@ PATCH http://localhost:8000/notes/1
 Content-Type: application/json
 
 {
-  "note": "{\"content\":\"Conteúdo alterado apenas\"}"
+  "note": "{\"content\":\"Conteúdo alterado apenas Teste\"}"
 }
 
 ### Deletar uma nota (substitua 1 pelo ID desejado)
-DELETE http://localhost:8000/notes/2 
+DELETE http://localhost:8000/notes/1
